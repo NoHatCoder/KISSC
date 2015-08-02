@@ -7,9 +7,9 @@ The `kissc.compress` function takes two arguments, first the string to be compre
 The `kissc.decompress` function takes two arguments, first the compressed string, second an optional maximum length. The encoding is detected automatically. If the string is found to be invalid, or would produce an output longer than the maximum length, `false` is returned instead of the decompressed string. If no maximum length is specified, a rogue compressed string could be used to crash the browser by producing a too large string.
 
     var compressedString = kissc.compress("String to be compressed.");
-	 var originalString = kissc.decompress(compressedString);
-	 
-	 var compressedString2 = kissc.compress("Another string to be compressed.",15);
+    var originalString = kissc.decompress(compressedString);
+    
+    var compressedString2 = kissc.compress("Another string to be compressed.",15);
     var originalString2 = kissc.decompress(compressedString2,100000);
 
 ### Bullet points
