@@ -13,8 +13,17 @@ The `kissc.decompress` function takes two arguments, first the compressed string
     var originalString2 = kissc.decompress(compressedString2,100000);
 
 ### Bullet points
-* Very small library, 9 kB without minification or compression, no dependencies.
-* Handles around 2.5 MB/s in modern desktop browsers.
+* Very small library, 12 kB without minification or compression, no dependencies.
+* Handles around 5 MB/s in modern desktop browsers.
 * Can deal with over 100 MB data in modern desktop browsers.
 * Very high compression ratio for very repetitive strings.
 * Reasonable compression for somewhat repetitive strings.
+* Permissive licence.
+
+### Update history
+August 2015 - Initial release
+
+November 2015 - Version 1.1
+* Secondary index mechanism, finds more matches, better compression.
+* Rewritten to rely mostly on arrays, better performance, lower memory footprint in browsers where typed arrays are supported.
+* Completely compatible with initial release.
