@@ -1,6 +1,9 @@
 # KISSC
 A small, simple, and easy-to-use JavaScript compression library. Supports Unicode strings.
 
+### Statement of support
+This library is finished, no additional development is planned. It is to the best of my knowledge bug-free, and should be considered a safer choice than more complicated libraries. The issue tracker is open, and any issue opened will generellay be dealt with.
+
 ### Usage
 The `kissc.compress` function takes two arguments, first the string to be compressed, second an optional encoding parameter. An encoding value of 6 (default) will produce a BASE64 string that is safe in pretty much any context. An encoding value of 15 will produce a BASE32768 string that is safe to use in JavaScript and LocalStorage, is legal Unicode, and contain no code points below 256.
 
